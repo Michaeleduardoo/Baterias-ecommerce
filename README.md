@@ -52,6 +52,8 @@ O design do projeto segue um padrão moderno e responsivo, garantindo uma navega
 ## 💻 Site
 Para acessar o site, clique no link abaixo.
 
+[E-commerce Baterias](https://baterias-ecommerce.vercel.app/) 💻
+
 ---
 
 💡 Criado por **Michael Eduardo** | [LinkedIn](https://www.linkedin.com/in/michael-eduardo/) | 🚀
