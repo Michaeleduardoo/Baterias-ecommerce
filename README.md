@@ -1,6 +1,7 @@
 # 🥁 E-commerce de Instrumentos Musicais
 
-![batera](https://github.com/user-attachments/assets/47335bd8-ea2a-4e58-b26e-0a06d307659f)
+![BateraPage](https://github.com/user-attachments/assets/e4a5351c-e90b-48ae-b0ec-947980c64216)
+
 
 ## 📌 Sobre o Projeto
 O **Baterias** é uma plataforma de e-commerce desenvolvida para a venda de baterias e acessórios musicais. O site conta com um design moderno e intuitivo, permitindo uma experiência de compra agradável e eficiente para os usuários.
