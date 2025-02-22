@@ -1,0 +1,90 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  scroll-behavior: smooth;
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --logo-page: 1.7rem;
+  --bg-color: #ffffff;
+  --suBg-color: #000000;
+  --text-color: #000000;
+  --other-color: #fffc63;
+  --border-line: #363636;
+  --azure-color: #3498db;
+  --h1-font: 4.5rem;
+  --h2-font: 3.5rem;
+  --sub-font: 1.2rem;
+  --p-font: 1rem;
+  --other-font: 1rem;
+  --add-font: 0.8rem;
+  --prince-font: 1.1rem;
+  --font--h3: 15px;
+  --btn-font: 1rem;
+  --icone-Hd: 1.4rem;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+section {
+  padding: 90px 14% 70px;
+}
+
+@media (max-width: 1610px) {
+  header {
+    padding: 15px 7%;
+  }
+  section {
+    padding: 70px 7% 80px;
+  }
+}
+
+@media (max-width: 1500px) {
+  :root {
+    --h1-font: 4rem;
+    --h2-font: 2.8rem;
+    --p-font: 15px;
+  }
+}
+
+@media (max-width: 1170px) {
+  header {
+    padding: 10px 4%;
+  }
+  section {
+    padding: 60px 4% 60px;
+    padding-top: 0 !important;
+  }
+}
+
+@media (max-width: 1055px) {
+  :root {
+    --logo-page: 1.4rem;
+    --h1-font: 5rem;
+    --icone-Hd: 1.2rem;
+    --h2-font: 2.5rem;
+  }
+}
+
+@media (max-width: 767px) {
+  :root {
+    --h1-font: 2.5rem;
+    --sub-font: 1.2rem;
+    --h2-font: 2rem;
+  }
+}
+
+@media (max-width: 450px) {
+  :root {
+    --h1-font: 2.2rem;
+    --sub-font: 1rem;
+    --h2-font: 2rem;
+  }
+}

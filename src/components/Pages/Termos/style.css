@@ -1,0 +1,49 @@
+.termos {
+  .center-text {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .section_10 {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .responsive-container-block {
+    display: flex;
+    flex-direction: column;
+
+    row-gap: 5px;
+  }
+
+  h3 {
+    font-size: var(--sub-font);
+    color: #222;
+    margin: 10px 0;
+  }
+
+  .subH3 {
+    margin: 5px 0;
+    font-size: var(--p-font);
+    color: #000;
+    font-weight: 600;
+  }
+
+  p {
+    font-size: var(--p-font);
+    color: #555;
+    line-height: 1.6;
+  }
+
+  a {
+    color: #3498db;
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+}

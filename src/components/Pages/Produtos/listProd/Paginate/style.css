@@ -1,0 +1,107 @@
+.pagination-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+  gap: 8px;
+}
+
+.arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  font-size: 14px;
+  color: #333;
+  font-weight: bold;
+  padding: 8px 14px;
+  background: #f2f2f2;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.arrow:hover {
+  background: #e0e0e0;
+}
+
+/* Números de Página */
+.pagination-number {
+  width: 40px;
+  height: 40px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+  background: #f9f9f9;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.pagination-number:hover {
+  background: #e0e0e0;
+  color: #202020;
+}
+
+.pagination-numbers {
+  width: auto;
+  height: 40px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+  background: #f9f9f9;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Página Ativa */
+.pagination-active {
+  background: #3498db;
+  color: white !important;
+  border-radius: 8px;
+  transform: scale(1.1);
+}
+
+/* Desabilitado */
+.disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Texto do botão de seta */
+.arrow-text {
+  font-size: 14px;
+  color: #555;
+}
+
+.hide {
+  display: none;
+  visibility: hidden;
+  height: 0;
+}
+
+.spinner-container {
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 1024px) {
+  .pagination-container {
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  .arrow-text {
+    display: none;
+  }
+}

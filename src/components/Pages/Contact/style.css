@@ -1,0 +1,21 @@
+.input-field {
+  textarea {
+    position: absolute;
+    width: 100%;
+    padding: 0 35px;
+    border: none;
+    outline: none;
+    font-size: var(--p-font);
+    border-bottom: 2px solid #ccc;
+    border-top: 2px solid transparent;
+    transition: all 0.2s ease;
+  }
+
+  textarea:is(:focus, :valid) {
+    border-bottom-color: #3498db;
+  }
+
+  textarea:is(:focus, :valid) ~ i {
+    color: #3498db;
+  }
+}

@@ -1,0 +1,192 @@
+.users {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .containerUser {
+    position: relative;
+    max-width: 100%;
+    width: 100%;
+    background: var(--bg-color);
+    border-radius: 10px;
+    border: 3px solid #e5e5e5;
+    overflow: hidden;
+    margin: 30px auto 0;
+  }
+
+  .containerUser .forms {
+    display: flex;
+    align-items: center;
+    height: 500px;
+    width: 200%;
+    transition: height 0.2s ease;
+  }
+
+  @media (max-width: 1024px) {
+    .containerUser .forms {
+      height: 800px;
+      margin-bottom: 40px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .containerUser .forms {
+      height: 500px;
+      margin: auto;
+    }
+  }
+
+  .containerUser .form {
+    width: 50%;
+    padding: 30px;
+    background-color: var(--bg-color);
+    transition: margin-left 0.18s ease;
+  }
+
+  .containerUser.active .login {
+    margin-left: -50%;
+    opacity: 0;
+    transition: margin-left 0.18s ease, opacity 0.15s ease;
+  }
+
+  .containerUser .signup {
+    opacity: 0;
+    transition: opacity 0.09s ease;
+  }
+
+  .containerUser.active .signup {
+    opacity: 1;
+    transition: opacity 0.2s ease;
+  }
+
+  .containerUser.active .forms {
+    height: 600px;
+  }
+
+  .containerUser .form .title {
+    position: relative;
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+
+  .form .title::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 30px;
+    background-color: #3498db;
+    border-radius: 30px;
+  }
+
+  .form .input-field {
+    position: relative;
+    height: 50px;
+    width: 100%;
+    margin-top: 30px;
+  }
+
+  .input-field input {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    padding: 0 35px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    border-bottom: 2px solid #ccc;
+    border-top: 2px solid transparent;
+    transition: all 0.2s ease;
+  }
+
+  .input-field input:is(:focus, :valid) {
+    border-bottom-color: #3498db;
+  }
+
+  .input-field i {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #999;
+    font-size: 23px;
+    transition: all 0.2s ease;
+  }
+
+  .input-field input:is(:focus, :valid) ~ i {
+    color: #3498db;
+  }
+
+  .input-field i.icon {
+    left: 0;
+  }
+
+  .input-field i.showHidePw {
+    right: 0;
+    cursor: pointer;
+    padding: 10px;
+  }
+
+  .form .checkbox-text {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+
+  .checkbox-text .checkbox-content {
+    display: flex;
+    align-items: center;
+  }
+
+  .checkbox-content input {
+    margin-right: 10px;
+    accent-color: #3498db;
+  }
+
+  .form .text {
+    color: #333;
+    font-size: 14px;
+  }
+
+  .form a.text {
+    color: #3498db;
+    text-decoration: none;
+  }
+
+  .form a:hover {
+    text-decoration: underline;
+  }
+
+  .button input {
+    display: inline-block;
+    padding: 14px 42px;
+    background: var(--bg-color);
+    color: var(--text-color);
+    font-weight: 500;
+    border: 1px solid var(--border-line);
+    transition: all 0.6s;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    width: 100%;
+  }
+
+  .button input:hover {
+    background: #000000;
+    border: 1px solid #000000;
+    color: #ffffff;
+  }
+
+  .form .login-signup {
+    margin-top: 30px;
+    text-align: center;
+  }
+
+  .login-link,
+  .signup-link {
+    margin-left: 5px;
+  }
+}

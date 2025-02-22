@@ -1,0 +1,134 @@
+.center-text {
+  text-align: center;
+}
+
+.center-text h2 {
+  font-size: var(--h2-font);
+  font-weight: 700;
+}
+
+.n-content {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: center;
+  gap: 1.5rem;
+  margin-top: 4rem;
+}
+
+.row-img {
+  overflow: hidden;
+  border-radius: 30px;
+  margin-bottom: 15px;
+}
+
+.row-img img {
+  display: block;
+  width: 100%;
+  transition: transform 0.5s;
+  cursor: pointer;
+}
+
+.row-img:hover img {
+  transform: scale(1.1);
+}
+
+.row h3 {
+  font-size: var(--font--h3);
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.stars a {
+  font-size: var(--other-font);
+  color: var(--other-color);
+  margin-right: 5px;
+}
+
+.row-in {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 5px;
+}
+
+.row-left a {
+  font-size: var(--add-font);
+  font-weight: 500;
+  color: var(--border-line);
+  transition: all 0.6s;
+}
+
+.row-left a:hover {
+  color: var(--azure-color);
+}
+
+.row-left i {
+  margin-left: 6px;
+}
+
+.row-right h6 {
+  font-size: var(--prince-font);
+  font-weight: 600;
+  color: var(--border-line);
+}
+
+.n-btn {
+  text-align: center;
+  margin-top: 4rem;
+}
+
+.btn2 {
+  display: inline-block;
+  padding: 14px 42px;
+  background: transparent;
+  color: var(--text-color);
+  font-size: var(--btn-font);
+  font-weight: 500;
+  border: 1px solid var(--suBg-color);
+  border-radius: 30px;
+  transition: all 0.6s;
+}
+
+.btn2:hover {
+  background: var(--text-color);
+  border: 1px solid var(--text-color);
+  color: var(--bg-color);
+  transform: scale(0.9) translateY(-6px);
+}
+
+/* Responsividade */
+@media (max-width: 1024px) {
+  .n-content {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .center-text h2 {
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  section {
+    padding: 30px;
+    margin-bottom: 30px;
+  }
+
+  .n-content {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  .btn2 {
+    padding: 10px 32px;
+  }
+}
+
+@media (max-width: 480px) {
+  .n-content {
+    grid-template-columns: 1fr;
+  }
+
+  .btn2 {
+    padding: 8px 24px;
+  }
+}

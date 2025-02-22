@@ -1,0 +1,29 @@
+.brands {
+  padding: 30px 14%;
+  background: var(--suBg-color);
+}
+
+.main-brands {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.brands-c img {
+  width: 100px;
+  height: auto;
+}
+
+@media (max-width: 1610px) {
+  .brands {
+    padding: 20px 7%;
+  }
+
+  .brands-c {
+    img {
+      width: 65px;
+    }
+  }
+}
